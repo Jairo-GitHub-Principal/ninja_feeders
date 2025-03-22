@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Estilos gerais */
+
+.nome-do-usuario{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 6%;
+
+}
+
+
+.text__membros{ /* corrige o lainhamento da margin top da div de user_list e da margem do componente mensagens*/
+ padding-top: 20px;
+}
+
+.clicavel{
+  cursor: pointer;
+}
+
+.title__membros{
+  text-shadow: 1px 1px 1px rgb(0, 195, 230);
+  padding: 5px;
+  
+}
+
+.user-logados {
+  width: 15rem;  /* A largura máxima será 25% da largura da página */
+  z-index: 1; 
+  float: left;
+  padding: 0%;
+  height: 90%;
+
+    /* Ocupa toda a altura da tela */
+   /* Certifique-se de que o valor é maior do que o conteúdo principal */
+ 
+
+}
+.user-logados:hover{
+  overflow-y:auto;
+}
+
+.user-logados::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+.user-logados::-webkit-scrollbar-track {
+  background: rgba(15, 194, 248, 0.44);        /* color da area da barra onde deslizara o scro  */
+}
+
+.user-logados::-webkit-scrollbar-thumb {
+  background-color: rgba(6, 128, 250, 0.773);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid rgb(22, 8, 89);  /* creates padding around scroll thumb */
+}
+
+.user-logados.expanded {
+  display: block !important;
+  
+ 
+}
+
+/* estilo para dimensionar a coluna da lista de usuario comforme a largura da pagina*/
+
+@media (min-width:700px) {
+  .user-logados {
+    min-width: 10rem;  /* A largura máxima será 25% da largura da página */
+    padding-left: 15px;
+  }
+
+  .nome-do-usuario{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    
+  
+  }
+}
+
+@media(max-width:740px){
+  .user-logados {
+    width: 100%;  /* A largura máxima será 25% da largura da página */
+    z-index: 1; 
+    float: left;
+    padding: 0%;
+    height: 90%;
+   
+      /* Ocupa toda a altura da tela */
+     /* Certifique-se de que o valor é maior do que o conteúdo principal */
+   
+  
+  }
+
+  .list__user{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width:1200px) {
+  .user-logados {
+    min-width: 18rem;  /* A largura máxima será 25% da largura da página */
+    padding-left: 15px;
+  }
+}
+
+
+/* CSS para ocultar a lista de usuários quando a largura for menor que 700px */
+@media (max-width: 700px) {
+  .user-logados {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .user-logados.expanded {
+    max-height: 150vh; /* Limita a altura máxima ao viewport */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical */
+    padding-bottom: 200px;
+    top: 13rem;
+  position: absolute;
+  height: 100vh;
+}
+
+
+.user-logados::-webkit-scrollbar {
+  width: 3px;               /* width of the entire scrollbar */
+}
+.user-logados::-webkit-scrollbar-track {
+  background: rgba(15, 194, 248, 0.44);        /* color da area da barra onde deslizara o scro  */
+}
+
+.user-logados::-webkit-scrollbar-thumb {
+  background-color: rgba(6, 128, 250, 0.773);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid rgb(22, 8, 89);  /* creates padding around scroll thumb */
+}
+
+
+
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.message-area {
+  flex-grow: 1;
+}
+
+.height__list__members{
+ 
+  border: solid 5px black;
+}
+
+

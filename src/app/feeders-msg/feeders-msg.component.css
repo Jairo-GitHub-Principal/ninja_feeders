@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container__msg{
+  
+  max-width:100%;
+    box-sizing: border-box;
+}
+
+.container__img__autor___msg{
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.container__img__autor{
+  text-shadow: 1px 1px 1px rgb(0, 195, 230);
+  padding: 5px;
+  
+}
+
+.container__msg__p{
+  font-size: 1.5em;
+   /* Define a altura máxima para 3 linhas */
+   max-height: 4.5em; /* Ajuste conforme necessário */
+      
+   /* Garante que o texto não ultrapasse o container */
+   overflow: hidden;
+   
+   /* Adiciona reticências quando o texto é truncado */
+   text-overflow: ellipsis;
+   
+   /* Configura o container para layout de bloco */
+   display: block;
+   
+   /* Garante que o texto quebra corretamente */
+   white-space: normal;
+   
+   /* Define a altura da linha para cálculo de altura máxima */
+   line-height: 1.5; /* Ajuste conforme necessário */
+   
+   /* Garante que o texto não se expanda além do container */
+   word-break: break-word; /* Para quebrar palavras longas */
+}
+
+
+
+.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+.user-logados {
+  z-index: 1;
+  float: left;
+  padding: 1%;
+
+  height: 90rem;
+  /* border: solid 5px black; */
+
+}
+
+.users-visiveis {
+  border: solid 5px rgb(134, 0, 183);
+
+  background: rgb(224, 220, 228);
+
+}
+
+.nome-do-usuario {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* codigo usado para alternar a cor da pontuação da mensagem */
+.positive {
+  color: rgb(32, 174, 60);
+}
+
+.neutro {
+  color: dodgerblue;
+}
+
+.negative {
+  color: red;
+}
+
+.lk__dlk__container {
+  /* border: solid 1px black; */
+  box-sizing: border-box;
+  
+  
+}
+
+@media(max-width:600px) {
+  .button__width {
+    width: 120px;
+  }
+}
+
+@media(min-width:600px) {
+  .button__width {
+    width: 200px;
+  }
+}
+
+@media(max-width:600px) {
+  
+  .container__msg__p{
+    font-size: 1em;
+     /* Define a altura máxima para 3 linhas */
+     max-height: 6em; /* Ajuste conforme necessário */
+        
+     
+     width: 90%;
+     /* Define a altura da linha para cálculo de altura máxima */
+     line-height: 2em; /* Ajuste conforme necessário */
+     
+     
+  }
+  
+  
+}
